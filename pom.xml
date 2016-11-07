@@ -51,7 +51,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>tech.emulator.maprender</mainClass>
+                            <mainClass>tech.emulator.maprender.MapRender</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

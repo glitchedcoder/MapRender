@@ -1,0 +1,6 @@
+name: MapRender
+description: Some fucking plugin that does maps.
+version: 1.0
+author: Emulator
+main: tech.emulator.maprender.MapRender
+commands:

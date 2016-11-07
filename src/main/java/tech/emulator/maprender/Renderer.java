@@ -35,7 +35,6 @@ public class Renderer extends MapRenderer {
     public void render(MapView view, MapCanvas canvas, Player player) {
         if (image != null) {
             plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, () -> canvas.drawImage(1, 1, image), 10);
-            player.sendMap(view);
         }
     }
 }

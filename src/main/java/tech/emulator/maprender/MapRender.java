@@ -7,9 +7,9 @@ import org.bukkit.map.MapView;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * @author GlitchedCode
@@ -29,7 +29,7 @@ public class MapRender extends JavaPlugin implements Listener {
         view.getRenderers().forEach(mapRenderer -> view.removeRenderer(mapRenderer));
         try {
             view.addRenderer(new Renderer(new File("File"), this));
-            view.addRenderer(new Renderer(ImageIO.read(new File("Image")), this));
+            view.addRenderer(new Renderer(ImageIO.read(new URL("http://myles.i.pxl.lt/zGelcj.png")), this));
         } catch (IOException e) {
             e.printStackTrace();
         }
